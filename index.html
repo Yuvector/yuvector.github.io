@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Yu Nexus 備份</title>
+<meta name="description" content="Yu Nexus 備份：Windows 桌面工具 Yu Nexus 的 Google 雲端硬碟加密備份功能。">
+<style>
+:root{--bg:#fafaf8;--fg:#1f2328;--muted:#59636e;--line:#d8dee4;--accent:#0b6bcb;--card:#ffffff}
+@media (prefers-color-scheme:dark){:root{--bg:#16181b;--fg:#e6e8eb;--muted:#a0a8b1;--line:#30363d;--accent:#5aa7ff;--card:#1d2024}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 system-ui,-apple-system,"Segoe UI","Microsoft JhengHei","Noto Sans TC",sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 16px 64px}
+h1{font-size:1.9rem;margin:0 0 4px}
+h2{font-size:1.2rem;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+p,li{color:var(--fg)}
+.sub{color:var(--muted);margin:0 0 24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:16px 0}
+code{font-family:Consolas,"Cascadia Mono",monospace;font-size:.9em;word-break:break-all}
+a{color:var(--accent)}
+.en{color:var(--muted)}
+footer{margin-top:40px;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<h1>Yu Nexus 備份</h1>
+<p class="sub">Windows 桌面工具 Yu Nexus 的 Google 雲端硬碟加密備份功能</p>
+
+<div class="card">
+<p>Yu Nexus 是一套在 Windows 電腦上執行的個人工作工具，用來整理庫存與合約交貨資料。「Yu Nexus 備份」是它的雲端備份功能：程式每天先在電腦上做好一份<strong>加密的完整備份包</strong>，再透過 Google Drive API 上傳到使用者<strong>自己選擇</strong>的 Google 雲端硬碟資料夾，作為電腦故障時的還原來源。</p>
+</div>
+
+<h2>它怎麼運作</h2>
+<ul>
+<li>使用者在程式的「設定」中按下登入，透過 Google 的畫面同意授權，並挑選要放備份的資料夾。</li>
+<li>程式在本機完成加密備份包後，自動上傳到該資料夾，並核對大小與內容。</li>
+<li>雲端只保留最近兩個成功日期的備份包，較舊的會由程式移除。</li>
+<li>上傳失敗時，本機與雲端原有的備份都會保留。</li>
+</ul>
+
+<h2>使用的 Google 權限</h2>
+<p>只使用一個權限：<code>https://www.googleapis.com/auth/drive.file</code></p>
+<p>這個權限只能存取「這個程式自己建立的檔案」與「使用者在 Google 選擇畫面中挑選的資料夾」。程式<strong>看不到也讀不到</strong>你雲端硬碟裡的其他檔案。</p>
+
+<h2>誰會使用</h2>
+<p>這個工具不公開發行，只供開發者本人與其授權的少數同事使用。每位使用者都登入自己的 Google 帳號。</p>
+
+<h2>隱私權</h2>
+<p>程式不經過開發者的伺服器，也不蒐集、出售或分享任何資料。詳細內容請看 <a href="privacy.html">隱私權政策</a>。</p>
+
+<h2 class="en">English summary</h2>
+<p class="en">Yu Nexus Backup is the cloud backup feature of Yu Nexus, a private Windows desktop tool for managing inventory and contract delivery records. It creates an encrypted backup package on the user's own computer and uploads it, through the Google Drive API, to a Google Drive folder that the user chooses. It requests only the <code>drive.file</code> scope, so it can access only files it created or the folder the user selected. The tool is not publicly distributed and is used only by its developer and a few authorized colleagues. See the <a href="privacy.html">Privacy Policy</a>.</p>
+
+<footer>
+<p>聯絡 / Contact：<a href="mailto:pig910999@gmail.com">pig910999@gmail.com</a></p>
+<p><a href="privacy.html">隱私權政策 / Privacy Policy</a></p>
+</footer>
+</main>
+</body>
+</html>

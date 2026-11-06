@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Yu Nexus 備份 隱私權政策</title>
+<meta name="description" content="Yu Nexus 備份的隱私權政策。">
+<style>
+:root{--bg:#fafaf8;--fg:#1f2328;--muted:#59636e;--line:#d8dee4;--accent:#0b6bcb}
+@media (prefers-color-scheme:dark){:root{--bg:#16181b;--fg:#e6e8eb;--muted:#a0a8b1;--line:#30363d;--accent:#5aa7ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 system-ui,-apple-system,"Segoe UI","Microsoft JhengHei","Noto Sans TC",sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 16px 64px}
+h1{font-size:1.7rem;margin:0 0 4px}
+h2{font-size:1.15rem;margin:28px 0 8px;padding-top:14px;border-top:1px solid var(--line)}
+.sub,.en{color:var(--muted)}
+code{font-family:Consolas,"Cascadia Mono",monospace;font-size:.9em;word-break:break-all}
+a{color:var(--accent)}
+footer{margin-top:40px;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<p><a href="./">← Yu Nexus 備份</a></p>
+<h1>隱私權政策</h1>
+<p class="sub">適用於「Yu Nexus 備份」（Yu Nexus 的 Google 雲端硬碟備份功能）　生效日期：2026 年 11 月 6 日</p>
+
+<h2>1. 會存取哪些 Google 資料</h2>
+<ul>
+<li><strong>Google 授權憑證</strong>：你同意授權後，Google 發給程式的存取憑證，用來代表你上傳備份。</li>
+<li><strong>你挑選的備份資料夾</strong>：你在 Google 選擇畫面中指定的雲端硬碟資料夾。</li>
+<li><strong>程式自己上傳的備份檔</strong>：包含檔名、大小、日期與檢查碼，用來確認上傳完整並淘汰舊檔。</li>
+</ul>
+<p>程式只使用 <code>https://www.googleapis.com/auth/drive.file</code> 權限，<strong>無法存取</strong>你雲端硬碟中其他任何檔案，也不讀取你的 Gmail、聯絡人、相簿或個人資料。</p>
+
+<h2>2. 資料用途</h2>
+<p>上述資料只用來：上傳加密備份包、核對上傳內容、只保留最近兩個成功日期並移除較舊的備份包。除此之外不作任何用途。</p>
+<ul>
+<li>不用於廣告、行銷或分析。</li>
+<li>不出售、不出租，也不提供給任何第三方。</li>
+<li>不用於訓練人工智慧或機器學習模型。</li>
+<li>除了你本人，沒有人會讀取你的資料；開發者也不會。</li>
+</ul>
+
+<h2>3. 資料存放位置</h2>
+<ul>
+<li>授權憑證只存在你自己的電腦上，並以 Windows 資料保護（DPAPI）加密，只有同一個 Windows 使用者能解開。</li>
+<li>備份內容在上傳前就已在你的電腦上加密。</li>
+<li>開發者沒有架設任何伺服器；資料只在你的電腦與 Google 之間直接傳送。</li>
+</ul>
+
+<h2>4. 保留與刪除</h2>
+<ul>
+<li>雲端只保留最近兩個成功日期的備份包。</li>
+<li>你可以隨時在 Google 雲端硬碟刪除備份資料夾。</li>
+<li>你可以隨時到 <a href="https://myaccount.google.com/permissions">Google 帳戶的「第三方應用程式與服務」</a> 移除「Yu Nexus 備份」的存取權，移除後程式就無法再上傳。</li>
+</ul>
+
+<h2>5. Google API 服務使用者資料政策</h2>
+<p>Yu Nexus 備份對 Google API 所取得資料的使用與傳輸，遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 服務使用者資料政策</a>，包括其中的「有限使用（Limited Use）」規定。</p>
+
+<h2>6. 本頁網站</h2>
+<p>本說明頁由 GitHub Pages 代管，本身不使用 Cookie 或分析工具；GitHub 可能依其政策記錄一般連線資訊。</p>
+
+<h2>7. 政策變更與聯絡方式</h2>
+<p>本政策如有變更，會更新本頁與生效日期。有任何問題請來信：<a href="mailto:pig910999@gmail.com">pig910999@gmail.com</a></p>
+
+<h2 class="en">English summary</h2>
+<p class="en">Yu Nexus Backup uses only the <code>drive.file</code> scope. It accesses only the Google authorization tokens you grant, the Drive folder you pick, and the encrypted backup files it uploads (name, size, date and checksum), solely to upload, verify and rotate backups (keeping the latest two successful dates). Data is not used for advertising or analytics, not sold or shared with third parties, not used to train AI/ML models, and not read by anyone but you. Tokens are stored only on your computer, encrypted with Windows DPAPI; backups are encrypted before upload; there is no developer server. You can delete the backup folder at any time and revoke access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Contact: <a href="mailto:pig910999@gmail.com">pig910999@gmail.com</a>.</p>
+
+<footer><p>Effective date: 2026-11-06</p></footer>
+</main>
+</body>
+</html>
